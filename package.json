@@ -1,0 +1,27 @@
+{
+  "name": "reactive-store-testing",
+  "version": "0.1.1",
+  "description": "Reactive store library for react",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "push": "npm run build && cd dist && npm publish",
+    "build": "npm run delete && npm run build:tsc && npm run build:copy-files",
+    "build:tsc": "tsc",
+    "build:copy-files": "node ./scripts/copyFiles.js",
+    "delete": "del-cli --force ./dist"
+  },
+  "author": "Angelo Statescu",
+  "license": "ISC",
+  "peerDependencies": {
+    "react": ">=16.8"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.18",
+    "del-cli": "^4.0.1",
+    "fs-extra": "^10.0.0",
+    "glob": "^7.2.0",
+    "typescript": "^5.1.6"
+  }
+}
