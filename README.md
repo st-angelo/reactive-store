@@ -1,6 +1,6 @@
 # reactive-store
 
-The common language of all [**developer-tools**](https://github.com/st-angelo/developer-tools) packages
+A reactive store package for react
 
 ## Install
 
